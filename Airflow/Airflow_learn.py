@@ -7,6 +7,7 @@ def extract():
     print("Extracting data from SQL Server")
 
 
+
 def transform():
     print("Transforming customer data")
 
