@@ -121,7 +121,6 @@ def validate_dataframe(df,expected_schema,required_columns):
     return errors
 
 errors=validate_dataframe(df,expected_schema,required_columns)
-
 if errors:
     print("schema validation failed")
 
