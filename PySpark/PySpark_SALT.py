@@ -24,5 +24,6 @@ Customer_df.show()
 #print(Customer_df.rdd.getNumPartitions())
 print(spark.conf.get("spark.sql.shuffle.partitions"))
 
-order.groupby("customer_id").count(*).alias("OrderCnt").orderBy(desc("OrderCnt")).show(20)
+#order.groupby("customer_id").count(*).alias("OrderCnt").orderBy(desc("OrderCnt")).show(20)
+print(floor(rand() * 1).cast("int"))
 
