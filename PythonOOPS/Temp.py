@@ -1613,20 +1613,6 @@ for i in flatlist(l):
 
 print(mylst)
 """
-class MyAddClass:
-    def __init__(self,x,y):
-        self.x=x
-        self.y=y
-
-    def __add__(self,other):
-        return MyAddClass(self.x+other.x,self.y+other.y)
-
-
-A=MyAddClass(1,2)
-B=MyAddClass(3,4)
-C=MyAddClass(3,4)
-D=A+B+C
-print(D.x,D.y)
 
 
 

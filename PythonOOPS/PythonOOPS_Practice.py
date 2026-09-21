@@ -1825,7 +1825,7 @@ class AdapterPayment:
 L=Legacypayment()
 A=AdapterPayment(L)
 A.ProcessPayment()
-"""
+
 from abc import ABC,abstractmethod
 class Home(ABC):
     @abstractmethod
@@ -1879,6 +1879,17 @@ B=MyAddClass(3,4)
 C=MyAddClass(3,4)
 D=A+B+C
 print(D.x,D.y)
+"""
+class Pipeline:
+    def __init__(self,name,source,destination,retries=0):
+        self.name=name
+        self.source=source
+        self.destination=destination
+        self.retries=retries
+
+
+class PipelineBuilder:
+    def __init__()
 
 
 
